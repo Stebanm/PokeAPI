@@ -1,0 +1,1305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.tarjeta {
+  width: 100%;
+  height: 100vh;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1020px;
+  height: 604px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rectangle-1 {
+  position: absolute;
+  left: 181px;
+  top: 0px;
+  overflow: visible;
+}
+
+.poke-global {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+
+.poke-img {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  width: 495px;
+  position: relative;
+}
+
+.poke-img img {
+  width: 413px;
+  height: 436px;
+  position: relative;
+}
+
+.divider {
+  background: #0f2349;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 2px;
+  position: relative;
+}
+
+.poke-content {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+
+.close {
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-end;
+  position: relative;
+}
+
+.close img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.poke-info {
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+
+.poke-id {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.poke-number {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.poke-number h1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.poke-name {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.bulbasaur2 {
+  color: #ffffff;
+  text-align: center;
+  font: 900 italic 36px "Poppins", sans-serif;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacion {
+  text-align: center;
+  font: 600 24px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.atribute {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.frame-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+
+.frame-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.weight {
+  flex-shrink: 0;
+  width: 40px;
+  height: 50px;
+  position: relative;
+}
+
+.weight2 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10.17px;
+  top: 10px;
+}
+
+._6-9-kg {
+  color: #ffffff;
+  text-align: left;
+  font: 400 20px "Poppins", sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.peso {
+  color: #818181;
+  text-align: center;
+  font: 400 16px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider2 {
+  background: #0f2349;
+  flex-shrink: 0;
+  width: 2px;
+  height: 100px;
+  position: relative;
+}
+
+.frame-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 107px;
+  height: 50px;
+  position: relative;
+}
+
+.ruler-vertical {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.ruler-vertical2 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+._0-7-m {
+  color: #ffffff;
+  text-align: center;
+  font: 400 20px "Poppins", sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.altura {
+  color: #818181;
+  text-align: center;
+  font: 400 16px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+
+.frame-5 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.semilla-espesura {
+  color: #ffffff;
+  font: 400 17px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.categor-a-habilidad {
+  color: #818181;
+  text-align: center;
+  font: 400 16px/25px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.estadisticas {
+  text-align: center;
+  font: 600 24px/16px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.base-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 151px;
+  position: relative;
+}
+
+.hp {
+  text-align: right;
+  font: 700 22px/16px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.atk {
+  text-align: right;
+  font: 700 22px/16px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.def {
+  text-align: right;
+  font: 700 22px/16px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.satk {
+  text-align: right;
+  font: 700 22px/16px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sdef {
+  text-align: right;
+  font: 700 22px/16px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.spd {
+  text-align: right;
+  font: 700 22px/16px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 42px;
+  height: 147px;
+  position: relative;
+}
+
+._045 {
+  color: #ffffff;
+  text-align: left;
+  font: 400 22px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+._049 {
+  color: #ffffff;
+  text-align: left;
+  font: 400 22px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+._065 {
+  color: #ffffff;
+  text-align: left;
+  font: 400 22px "Poppins", sans-serif;
+  position: relative;
+  align-self: stretch;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 16px;
+  position: relative;
+}
+
+.value {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 7px;
+  position: relative;
+}
+
+.progress-bar {
+  border-radius: 4px 0px 0px 4px;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  width: auto;
+}
+
+/* Estilo para la barra gris (parte que no se llena) */
+.progress_bar_normal::-webkit-progress-bar {
+  background-color: #26374a;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_fire::-webkit-progress-bar {
+  background-color: #342f3c;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_water::-webkit-progress-bar {
+  background-color: #193262;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_grass::-webkit-progress-bar {
+  background-color: #1b3e41;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_electric::-webkit-progress-bar {
+  background-color: #363f3c;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_ice::-webkit-progress-bar {
+  background-color: #22415e;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_fighting::-webkit-progress-bar {
+  background-color: #2a1f3a;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_poison::-webkit-progress-bar {
+  background-color: #252252;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_ground::-webkit-progress-bar {
+  background-color: #313c47;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_psychic::-webkit-progress-bar {
+  background-color: #36274e;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_bug::-webkit-progress-bar {
+  background-color: #263a39;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_rock::-webkit-progress-bar {
+  background-color: #253855;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_ghost::-webkit-progress-bar {
+  background-color: #1a2751;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_dragon::-webkit-progress-bar {
+  background-color: #1a2164;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+.progress_bar_fairy::-webkit-progress-bar {
+  background-color: #343a58;
+  /* Cambia el color de fondo de la barra gris */
+  border-radius: 20px;
+  width: auto;
+}
+
+/* Estilo para la barra que se llena */
+.progress_bar_normal::-webkit-progress-value {
+  background-color: #a8a878;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_fire::-webkit-progress-value {
+  background-color: #f08030;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_water::-webkit-progress-value {
+  background-color: #6890f0;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_grass::-webkit-progress-value {
+  background-color: #74cb48;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_electric::-webkit-progress-value {
+  background-color: #f8d030;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_ice::-webkit-progress-value {
+  background-color: #98d8d8;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_fighting::-webkit-progress-value {
+  background-color: #c03028;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_poison::-webkit-progress-value {
+  background-color: #a43e9e;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_ground::-webkit-progress-value {
+  background-color: #e0c068;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_psychic::-webkit-progress-value {
+  background-color: #f85888;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_bug::-webkit-progress-value {
+  background-color: #a8b820;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_rock::-webkit-progress-value {
+  background-color: #a4acaf;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_ghost::-webkit-progress-value {
+  background-color: #705898;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_dragon::-webkit-progress-value {
+  background-color: #7038f8;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+.progress_bar_fairy::-webkit-progress-value {
+  background-color: #f0b6bc;
+  /* Cambia el color de fondo de la barra que se llena */
+  border-radius: 20px;
+}
+
+/* Cambiar el color de la imagen de cierre (X) del color de su respectivo pokemon*/
+.close_normal img {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(16%) saturate(620%)
+    hue-rotate(22deg) brightness(92%) contrast(86%);
+}
+
+.close_fire img {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(87%) saturate(472%)
+    hue-rotate(341deg) brightness(101%) contrast(88%);
+}
+
+.close_water img {
+  filter: brightness(0) saturate(100%) invert(58%) sepia(90%) saturate(2634%)
+    hue-rotate(200deg) brightness(98%) contrast(91%);
+}
+
+.close_grass img {
+  filter: brightness(0) saturate(100%) invert(66%) sepia(66%) saturate(384%)
+    hue-rotate(56deg) brightness(95%) contrast(86%);
+}
+
+.close_electric img {
+  filter: brightness(0) saturate(100%) invert(85%) sepia(45%) saturate(2272%)
+    hue-rotate(332deg) brightness(113%) contrast(107%);
+}
+
+.close_ice img {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(89%) saturate(428%)
+    hue-rotate(127deg) brightness(87%) contrast(94%);
+}
+
+.close_fighting img {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(56%) saturate(2433%)
+    hue-rotate(341deg) brightness(120%) contrast(95%);
+}
+
+.close_poison img {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(54%) saturate(1015%)
+    hue-rotate(259deg) brightness(95%) contrast(95%);
+}
+
+.close_ground img {
+  filter: brightness(0) saturate(100%) invert(96%) sepia(29%) saturate(5170%)
+    hue-rotate(307deg) brightness(92%) contrast(90%);
+}
+
+.close_psychic img {
+  filter: brightness(0) saturate(100%) invert(71%) sepia(76%) saturate(5289%)
+    hue-rotate(310deg) brightness(100%) contrast(96%);
+}
+
+.close_bug img {
+  filter: brightness(0) saturate(100%) invert(66%) sepia(63%) saturate(546%)
+    hue-rotate(23deg) brightness(93%) contrast(86%);
+}
+
+.close_rock img {
+  filter: brightness(0) saturate(100%) invert(71%) sepia(6%) saturate(256%)
+    hue-rotate(151deg) brightness(95%) contrast(89%);
+}
+
+.close_ghost img {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(18%) saturate(1348%)
+    hue-rotate(221deg) brightness(90%) contrast(85%);
+}
+
+.close_dragon img {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(97%) saturate(7166%)
+    hue-rotate(255deg) brightness(100%) contrast(95%);
+}
+
+.close_fairy img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(47%) saturate(3494%)
+    hue-rotate(289deg) brightness(103%) contrast(90%);
+}
+
+/* Estilos para pantallas grandes */
+@media (max-width: 1023px) {
+  .tarjeta {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .divider,
+  .divider2 {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 0px;
+    background-color: none;
+  }
+
+  .rectangle-1 {
+    width: auto;
+    left: 5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .poke-img {
+    max-width: 45%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .poke-img img {
+    max-width: 80%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .poke-global {
+    padding: 0px;
+    margin: 0;
+  }
+
+  .poke-content {
+    max-width: 60%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .poke-info {
+    max-width: 58%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .poke-id,
+  .poke-number h1,
+  .bulbasaur2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .categor-a-habilidad,
+  .semilla-espesura,
+  .altura,
+  ._0-7-m,
+  .poke-number h1,
+  .peso,
+  ._6-9-kg,
+  .abilities {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .informacion,
+  .estadisticas {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+
+  .atribute {
+    margin: 0;
+    padding: 0;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .frame-2 {
+    margin: 0;
+    padding: 0;
+    max-width: 20px;
+  }
+
+  .frame-4 {
+    margin: 0;
+    padding: 0;
+    max-width: 20px;
+    margin-right: 63px;
+    margin-left: 63px;
+  }
+
+  .frame-6 {
+    margin: 0;
+    padding: 0;
+    max-width: 30px;
+  }
+
+  .base-stats {
+    max-width: 90%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .label .data {
+    height: auto;
+    max-width: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hp,
+  .atk,
+  .def,
+  .satk,
+  .sdef,
+  .spd,
+  ._045,
+  ._049,
+  ._065 {
+    font-size: 14px;
+  }
+
+  .chart {
+    max-width: 100%;
+  }
+
+  .progress-bar {
+    height: 2px;
+    max-height: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .close {
+    padding: 5px;
+  }
+
+  .close img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Estilos para el botón de cierre (X) en pantallas pequeñas */
+  .close_normal img,
+  .close_fire img,
+  .close_water img,
+  .close_grass img,
+  .close_electric img,
+  .close_ice img,
+  .close_fighting img,
+  .close_poison img,
+  .close_ground img,
+  .close_psychic img,
+  .close_bug img,
+  .close_rock img,
+  .close_ghost img,
+  .close_dragon img,
+  .close_fairy img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .tarjeta {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rectangle-1 {
+    width: auto;
+    left: 5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .poke-img {
+    max-width: 350px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .poke-img img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .poke-global {
+    padding: 0px;
+    margin: 0;
+  }
+
+  .poke-content {
+    width: 300px;
+    padding: 10px;
+  }
+
+  .poke-info {
+    max-width: 100%;
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+  }
+
+  .poke-id,
+  .poke-number h1,
+  .bulbasaur2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .informacion,
+  .estadisticas {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+
+  .atribute {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .frame-2 {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .frame-4 {
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+  }
+
+  .frame-6 {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .base-stats {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .label,
+  .data,
+  .chart-container {
+    height: auto;
+    gap: 6px;
+  }
+
+  .hp,
+  .atk,
+  .def,
+  .satk,
+  .sdef,
+  .spd,
+  ._045,
+  ._049,
+  ._065 {
+    font-size: 14px;
+  }
+
+  .chart {
+    max-width: 100%;
+  }
+
+  .progress-bar {
+    height: 2px;
+    max-height: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .close {
+    padding: 5px;
+  }
+
+  .close img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Estilos para el botón de cierre (X) en pantallas pequeñas */
+  .close_normal img,
+  .close_fire img,
+  .close_water img,
+  .close_grass img,
+  .close_electric img,
+  .close_ice img,
+  .close_fighting img,
+  .close_poison img,
+  .close_ground img,
+  .close_psychic img,
+  .close_bug img,
+  .close_rock img,
+  .close_ghost img,
+  .close_dragon img,
+  .close_fairy img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (hasta 425px) */
+@media (max-width: 425px) {
+  .tarjeta {
+    padding: 2px;
+    border-radius: 10px;
+    width: 320px;
+    height: auto;
+    position: relative;
+  }
+
+  .poke-global {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background: #051b3f;
+  }
+
+  .poke-content {
+    max-width: 100%;
+  }
+
+  .poke-info {
+    max-width: 100%;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .divider {
+    opacity: 0;
+  }
+
+  .rectangle-1 {
+    opacity: 0;
+  }
+
+  .poke-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .poke-img img {
+    max-width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .poke-id,
+  .poke-number h1,
+  .bulbasaur2 {
+    font-size: 30px;
+  }
+
+  .categor-a-habilidad,
+  .semilla-espesura,
+  .altura,
+  ._0-7-m,
+  .poke-number h1,
+  .peso,
+  ._6-9-kg,
+  .abilities {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .informacion,
+  .estadisticas {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .atribute {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .frame-2 {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  .frame-4 {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  .frame-6 {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .base-stats {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .label .data {
+    height: auto;
+    max-width: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hp,
+  .atk,
+  .def,
+  .satk,
+  .sdef,
+  .spd,
+  ._045,
+  ._049,
+  ._065 {
+    font-size: 14px;
+  }
+
+  .chart {
+    max-width: 100%;
+  }
+
+  .progress-bar {
+    height: 2px;
+    max-height: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .close {
+    padding: 5px;
+  }
+
+  .close img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Estilos para el botón de cierre (X) en pantallas pequeñas */
+  .close_normal img,
+  .close_fire img,
+  .close_water img,
+  .close_grass img,
+  .close_electric img,
+  .close_ice img,
+  .close_fighting img,
+  .close_poison img,
+  .close_ground img,
+  .close_psychic img,
+  .close_bug img,
+  .close_rock img,
+  .close_ghost img,
+  .close_dragon img,
+  .close_fairy img {
+    width: 15px;
+    height: 15px;
+  }
+}

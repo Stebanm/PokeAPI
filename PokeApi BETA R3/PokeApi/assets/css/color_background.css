@@ -1,0 +1,72 @@
+/* Background box pokemon */
+.color_background_normal {
+  background-color: #d8d8aa7f;
+}
+
+.color_background_fire {
+  background-color: #ffdfc8;
+}
+
+.color_background_water {
+  background-color: #dde7ff;
+}
+
+.color_background_grass {
+  background-color: #defde0;
+}
+
+.color_background_electric {
+  background-color: #fcf7de;
+}
+
+.color_background_ice {
+  background-color: #e0f5ff;
+}
+
+.color_background_fighting {
+  background-color: #fde2e1;
+}
+
+.color_background_poison {
+  background-color: #ffe2fe;
+}
+
+.color_background_ground {
+  background-color: #f4e7da;
+}
+
+.color_background_flying {
+  background-color: #e2d8ff;
+}
+
+.color_background_psychic {
+  background-color: #fde0e9;
+}
+
+.color_background_bug {
+  background-color: #faffd2;
+}
+
+.color_background_rock {
+  background-color: #e2e2e2;
+}
+
+.color_background_ghost {
+  background-color: #e4d5fa;
+}
+
+.color_background_dark {
+  background-color: #f7c4a2;
+}
+
+.color_background_dragon {
+  background-color: #e6dbff;
+}
+
+.color_background_steel {
+  background-color: #d0d3d4;
+}
+
+.color_background_fairy {
+  background-color: #fcebee;
+}

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeApi</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/eb496ab1a0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Style page -->
+    <link rel="stylesheet" href="assets/css/estilo-header.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+    <link rel="stylesheet" href="./assets/css/star-animation.css" />
+    <link rel="stylesheet" href="assets/css/style-pokemon.css" />
+    <link rel="stylesheet" href="./assets/css/info-pokemon.css" />
+    <link rel="stylesheet" href="assets/css/color_background.css" />
+    <link rel="stylesheet" href="./assets/css/style-footer.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="main-width">
+        <header>
+          <!-- Img Pokeapi -->
+          <div class="pokeapi">
+            <img src="./assets/img/pokeapi.png" alt="" />
+          </div>
+
+          <!-- Social Links -->
+          <div class="content-links">
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+          </div>
+
+          <!-- Animated Background Effects -->
+          <div id="stars"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+
+          <!-- Footer for header -->
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </header>
+      </div>
+    </section>
+
+    <div class="navbar">
+      <nav>
+        <div class="exact-search">
+          <!-- Tipos Pokemones -->
+          <div class="dropdown" id="dropdown-content">
+            <button class="dropdown__button" id="dropdown-button">
+              <img src="./assets/img/pokeball.png" alt="" />
+              <span class="dropdown__name">Tipo de Pokemon</span>
+
+              <div class="dropdown__icons">
+                <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                <i class="ri-close-line dropdown__close"></i>
+              </div>
+            </button>
+
+            <ul class="dropdown__menu">
+              <div class="content-type">
+                <button
+                  class="dropdown__item btn-pokemon all-selector"
+                  id="ver-todos"
+                >
+                  <span class="dropdown__name">Ver todos</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon normal-selector"
+                  id="normal"
+                >
+                  <img src="./assets/img/pokeball.png" />
+                  <span class="dropdown__name">Normal</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon fire-selector"
+                  id="fire"
+                >
+                  <img src="./assets/img/type/icon-fire.svg" />
+                  <span class="dropdown__name">Fire</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon water-selector"
+                  id="water"
+                >
+                  <img src="./assets/img/type/icons-water.png" alt="" />
+                  <span class="dropdown__name">Water</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon grass-selector"
+                  id="grass"
+                >
+                  <img src="./assets/img/type/icon-grass.svg" alt="" />
+                  <span class="dropdown__name">Grass</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon electric-selector"
+                  id="electric"
+                >
+                  <img src="./assets/img/type/icon-electric.svg" alt="" />
+                  <span class="dropdown__name">Electric</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon ice-selector"
+                  id="ice"
+                >
+                  <img src="./assets/img/type/icon-ice.svg" alt="" />
+                  <span class="dropdown__name">Ice</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon fighting-selector"
+                  id="fighting"
+                >
+                  <img src="./assets/img/type/icon-fighting.svg" alt="" />
+                  <span class="dropdown__name">Fighting</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon poison-selector"
+                  id="poison"
+                >
+                  <img src="./assets/img/type/icons-poison.png" alt="" />
+                  <span class="dropdown__name">Poison</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon ground-selector"
+                  id="ground"
+                >
+                  <img src="./assets/img/type/icons-ground.png" />
+                  <span class="dropdown__name">Ground</span>
+                </button>
+              </div>
+
+              <div class="content-type">
+                <button
+                  class="dropdown__item btn-pokemon flying-selector"
+                  id="flying"
+                >
+                  <img src="./assets/img/type/icons-flying.png" />
+                  <span class="dropdown__name">Flying</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon psychic-selector"
+                  id="psychic"
+                >
+                  <img src="./assets/img/type/icons-psychic.png" />
+                  <span class="dropdown__name">Psychic</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon bug-selector"
+                  id="bug"
+                >
+                  <img src="./assets/img/type/icons-bug.png" alt="" />
+                  <span class="dropdown__name">Bug</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon rock-selector"
+                  id="rock"
+                >
+                  <img src="./assets/img/type/icons-rock.png" alt="" />
+                  <span class="dropdown__name">Rock</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon rock-selector"
+                  id="ghost"
+                >
+                  <img src="./assets/img/type/iconst-ghost.png" alt="" />
+                  <span class="dropdown__name">Ghost</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon dark-selector"
+                  id="dark"
+                >
+                  <img src="./assets/img/type/icons-dark.png" alt="" />
+                  <span class="dropdown__name">Dark</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon dragon-selector"
+                  id="dragon"
+                >
+                  <img src="./assets/img/type/icons-dragon.png" alt="" />
+                  <span class="dropdown__name">Dragon</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon steel-selector"
+                  id="steel"
+                >
+                  <img src="./assets/img/type/icons-steel.png" alt="" />
+                  <span class="dropdown__name">Steel</span>
+                </button>
+
+                <button
+                  class="dropdown__item btn-pokemon fairy-selector"
+                  id="fairy"
+                >
+                  <img src="./assets/img/type/icon-fairy.png" />
+                  <span class="dropdown__name">Fairy</span>
+                </button>
+              </div>
+            </ul>
+          </div>
+
+          <!-- Search bar Pokemon -->
+          <div class="container-bar">
+            <form class="search" id="search-bar">
+              <input
+                type="search"
+                placeholder="Busca tu Pokemon..."
+                id="buscador"
+                class="search__input"
+              />
+
+              <div class="search__button" id="search-button">
+                <i class="ri-search-2-line search__icon"></i>
+                <i class="ri-close-line search__close"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Pokemon -->
+    <main>
+      <div class="container">
+        <div class="all-pokemon" id="pokemonList">
+          <!-- <div class="pokemon">
+            <div class="background-img">
+              <div class="pokemon-id">
+                <h2>#001</h2>
+              </div>
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                alt="Bulbasaur"
+              />
+            </div>
+            <div class="pokemon-info">
+              <div class="pokemon-type">
+                <ul>
+                  <li class="grass type">Planta</li>
+                  <li class="poison type">Venenoso</li>
+                </ul>
+              </div>
+              <div class="pokemon-name">
+                <h2>Bulbasaur</h2>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- <div class="container-btnMore">
+          <button id="morePokemon">Más Pokemones</button>
+        </div> -->
+
+        <div id="mensaje-resultado" style="display: none">
+          No se encontro ningun Pokémon con este nombre.
+        </div>
+      </div>
+
+      <section class="modal" id="modal">
+        <!-- <div class="ventana">
+          <div class="tarjeta">
+            <svg
+              class="rectangle-1"
+              width="839"
+              height="604"
+              viewBox="0 0 839 604"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M104.875 0H809C825.569 0 839 13.4315 839 30V574C839 590.569 825.569 604 809 604H0L104.875 0Z"
+                fill="#051B3F"
+              />
+            </svg>
+
+            <div class="poke-global">
+              <div class="poke-img">
+                <img class="bulbasaur"
+                src="${poke.sprites.other["official-artwork"].front_default}" />
+              </div>
+              <div class="divider"></div>
+              <div class="poke-content">
+                <div class="close">
+                  <img
+                    onclick="CloseModal()"
+                    class="close2"
+                    src="./assets/img/close.png"
+                  />
+                </div>
+                <div class="poke-info">
+                  <div class="poke-id">
+                    <div class="poke-number">
+                      <div class="_001">#${pokeId}</div>
+                    </div>
+                    <div class="poke-name">
+                      <div class="bulbasaur2">${poke.name}</div>
+                    </div>
+                  </div>
+                  <div class="informaci-n">Información</div>
+                  <div class="atribute">
+                    <div class="frame-2">
+                      <div class="frame-1">
+                        <div class="weight">
+                          <img class="weight2" src="./assets/img/weight.png" />
+                        </div>
+                        <div class="_6-9-kg">6,9 kg</div>
+                      </div>
+                      <div class="peso">Peso</div>
+                    </div>
+                    <div class="divider2"></div>
+                    <div class="frame-4">
+                      <div class="frame-3">
+                        <div class="ruler-vertical">
+                          <img
+                            class="ruler-vertical2"
+                            src="./assets/img/rule.png"
+                          />
+                        </div>
+                        <div class="_0-7-m">0,7 m</div>
+                      </div>
+                      <div class="altura">Altura</div>
+                    </div>
+                    <div class="divider2"></div>
+                    <div class="frame-6">
+                      <div class="frame-5">
+                        <div class="semilla-espesura">
+                          Semilla<br />Espesura
+                        </div>
+                      </div>
+                      <div class="categor-a-habilidad">
+                        Categoría<br />Habilidad
+                      </div>
+                    </div>
+                  </div>
+                  <div class="estad-sticas">Estadísticas</div>
+                  <div class="base-stats">
+                    <div class="label">
+                      <div class="hp">HP</div>
+                      <div class="atk">ATK</div>
+                      <div class="def">DEF</div>
+                      <div class="satk">SATK</div>
+                      <div class="sdef">SDEF</div>
+                      <div class="spd">SPD</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="data">
+                      <div class="_045">045</div>
+                      <div class="_049">049</div>
+                      <div class="_049">049</div>
+                      <div class="_065">065</div>
+                      <div class="_065">065</div>
+                      <div class="_045">045</div>
+                    </div>
+                    <div class="chart">
+                      <div class="chart-1">
+                        <div class="value">
+                          <div class="rectangle-4"></div>
+                        </div>
+                        <div class="background"></div>
+                      </div>
+                      <div class="chart-2">
+                        <div class="value2">
+                          <div class="rectangle-4"></div>
+                        </div>
+                        <div class="background"></div>
+                      </div>
+                      <div class="chart-3">
+                        <div class="value2">
+                          <div class="rectangle-4"></div>
+                        </div>
+                        <div class="background"></div>
+                      </div>
+                      <div class="chart-4">
+                        <div class="value3">
+                          <div class="rectangle-4"></div>
+                        </div>
+                        <div class="background"></div>
+                      </div>
+                      <div class="chart-5">
+                        <div class="value4">
+                          <div class="rectangle-4"></div>
+                        </div>
+                        <div class="background"></div>
+                      </div>
+                      <div class="chart-6">
+                        <div class="value">
+                          <div class="rectangle-4"></div>
+                        </div>
+                        <div class="background"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </main>
+
+    <!--::::Pie de Pagina::::::-->
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="./assets/img/pokeapi.png" />
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>DESARROLLADORES</h2>
+          <p>Angelica Cuero<br />Luna Bedoya<br />Juan Esteban Molina</p>
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small
+          >&copy; 2023 <b>PokeAPI</b> - Todos los Derechos Reservados.</small
+        >
+      </div>
+    </footer>
+    <!-- Funtionality JavaScript -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/busqueda.js"></script>
+    <script src="./assets/js/dropdow.js"></script>
+    <script src="assets/js/modal.js"></script>
+  </body>
+</html>
